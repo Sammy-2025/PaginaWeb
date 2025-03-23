@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Empresa</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed; /* Fija el ancho de las columnas */
+          }
+          
+          table td {
+            width: 33.33%; /* Asigna un tercio del ancho total a cada columna */
+            border: 1px solid #ccc;
+            padding: 15px;
+            vertical-align: top;
+          }
+
+          nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            background-color: #3d95ecde; /* Color azul oscuro */
+          }
+
+          nav ul li {
+            position: relative;
+          }
+
+          nav ul li a {
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            text-decoration: none;
+          }
+
+          nav ul li:hover > ul {
+            display: block;
+          }
+
+          nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0479ee;
+            padding: 0;
+            z-index: 1000; /* Asegura que quede sobre otros elementos */
+            width: 200px;
+          }
+
+          nav ul ul li {
+            width: 100%;
+          }
+
+          nav ul ul li a {
+            padding: 10px;
+            color: white;
+            display: block;
+            text-decoration: none;
+          }
+
+          nav ul ul li a:hover {
+            background-color: #097ff5e8;
+          }
+        </style>
+    </head>
+<body>
+  <!-- Barra superior con nombre y selector de idioma -->
+<div class="top-bar">
+  <div class="nombre-sitio">F.C.T GLOBAL</div>
+  <div class="idiomas">
+    <a href="#" title="Español"><img src="es.png" alt="Español" class="bandera"></a>
+    <a href="#" title="English"><img src="en.png" alt="Inglés" class="bandera"></a>
+  </div>
+</div>
+    <header>
+        <div class="empresa">
+          <img src="Shalada.png" alt="Logo Shalada">
+          <div class="texto-empresa">
+            <h1>F.C.T</h1>
+            <p>Financiero / Contable / Tributaria</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="profesionales.html">Profesionales</a></li>
+            <li>
+              <a href="servicios.html">Servicios</a>
+              <ul>
+                <li><a href="#">Auditoría</a></li>
+                <li><a href="#">Revisoría</a></li>
+                <li><a href="#">Consultoría y Asesoría</a></li>
+                <li><a href="#">Outsourcing</a></li>
+                <li><a href="#">Precios de Transferencia</a></li>
+                <li><a href="#">Capacitaciones</a></li>
+              </ul>
+            </li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <!-- Sección informativa -->
+  <section class="info-section">
+    <div class="info-container">
+      <div class="info-card">
+            <h3>Liderazgo</h3>
+        <p>
+            Nuestros líderes establecen los más altos estándares para nuestro trabajo, 
+            asegurando que nos mantengamos enfocados en nuestra misión de permitir un 
+            excelente trabajo, más inteligente y más seguro para mejorar los procesos 
+            empresariales de vital importancia para el crecimiento de nuestra organización.
+        </p>
+    </div>
+    <div class="info-card">
+            <h3>Carreras</h3>
+        <p>
+            Nos impulsa la pasión por mejorar el bienestar de todos y por innovar en las 
+            ciencias administrativas, para garantizar el modernismo de información con las 
+            tecnologías actualizadas, garantizando la gestión administrativa de los procesos en general.
+        </p>
+    </div>
+    <div class="info-card">
+            <h3>Socios y proveedores</h3>
+        <p>
+            Las relaciones inclusivas y la confianza con nuestros asociados comerciales y 
+            proveedores en todo el territorio son esenciales para que podamos ofrecer gestión 
+            y liderazgo de alta calidad.
+        </p>
+    </div>
+          <!-- Segunda fila (3 columnas) -->
+    <div class="info-card">
+          <h3>Gobernanza</h3>
+          <p>
+            El valor para nuestras partes interesadas en todo el territorio nacional comienza 
+            con la responsabilidad. Solucionamos los desafíos de nuestros clientes dentro de 
+            un marco de políticas de transparencia y equidad.
+          </p>
+    </div>
+    <div class="info-card">
+          <h3>Ética y cumplimiento</h3>
+          <p>
+            Guiados por la integridad, damos prioridad a las personas en todo lo que hacemos, 
+            garantizando el cumplimiento con las normas profesionales a través de nuestro 
+            control interno.
+          </p>
+    </div>
+    <div class="info-card">
+          <h3>Cómo innovamos</h3>
+          <p>
+            Escuchamos atentamente las necesidades de las partes interesadas y ampliamos los 
+            límites para superar sus mayores desafíos. En FINANCONTRI, reunimos los mejores 
+            profesionales en el análisis y procesamiento para garantizar la gestión de 
+            nuestra empresa.
+          </p>
+        </div>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

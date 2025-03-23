@@ -1,0 +1,171 @@
+/* Estilos generales */
+body.inicio {
+    font-family: Arial, sans-serif;
+    background-image: url('Principal image.jpg'); /* Imagen para la página principal */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Para la página de servicios */
+  body.servicios {
+    font-family: Arial, sans-serif;
+    background-image: url('ServiciosImage.jpg'); /* Imagen para la página de servicios */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+ 
+/* Encabezado */
+header {
+    background-color:#007bff;
+    color: white;
+    padding: 10px 20px;  /* Se reduce la altura con menos padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contenedor del logo y texto de la empresa */
+.empresa {
+    display: flex;
+    align-items: center;
+}
+
+.empresa img {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+.texto-empresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.texto-empresa h1 {
+    font-size: 20px; /* Tamaño de fuente reducido para el título */
+    margin: 0;
+}
+
+.texto-empresa p {
+    font-size: 12px; /* Tamaño de fuente reducido para el subtítulo */
+    margin: 0;
+    color: #ddd;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;  /* Padding reducido para que el menú sea más compacto */
+    font-size: 14px;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+    padding: 5px 10px;  /* Tamaño compacto */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}  /* <-- Cierre agregado aquí */
+
+/* Sección informativa moderna */
+.info-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre columnas y filas */
+  }
+
+.info-card {
+    background-color: rgb(166, 179, 218); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(14, 11, 235, 0.486);
+    backdrop-filter: blur(10px); /* Efecto de desenfoque para simular vidrio esmerilado */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con Safari */
+}
+
+.info-card h3 {
+    color: #021c36;  /* Azul oscuro para los títulos */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #080a08;     /* Negro para el texto */
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Fija el ancho de las columnas */
+  }
+  
+  table td {
+    width: 33.33%; /* Asigna un tercio del ancho total a cada columna */
+    border: 1px solid #ccc;
+    padding: 15px;
+    vertical-align: top;
+  }
+  /* Barra superior */
+.top-bar {
+    background-color: #021c36; /* Azul oscuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+  
+  /* Nombre del sitio */
+  .nombre-sitio {
+    font-weight: bold;
+  }
+  
+  /* Selector de idioma */
+  .idiomas a {
+    margin-left: 10px;
+  }
+  
+  .bandera {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 3px;
+    transition: transform 0.2s ease;
+  }
+  
+  .bandera:hover {
+    transform: scale(1.1);
+  }

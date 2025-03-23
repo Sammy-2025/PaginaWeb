@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('ServiciosImage.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+    }
+    
+    .container {
+      max-width: 90%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+      background: rgba(31, 16, 236, 0.6);
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    
+    .service-box {
+      background: rgba(25, 28, 223, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .service-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    }
+    
+    .service-title {
+      font-weight: bold;
+      color: #ff5733;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Servicios</h1>
+    <div class="service-grid">
+      <div class="service-box">
+        <div class="service-title">F.C.T Financieros Contables Tributarios</div>
+        <p>Se posiciona como tu aliado estratégico integral...</p>
+      </div>
+      <div class="service-box">
+        <div class="service-title">Contable</div>
+        <ul>
+          <li>Contabilidad General</li>
+          <li>Elaboración de Estados Financieros</li>
+          <li>Asesoría y Consultoría</li>
+        </ul>
+      </div>
+      <div class="service-box">
+        <div class="service-title">Tributario</div>
+        <ul>
+          <li>Planificación y Optimización Tributaria</li>
+          <li>Auditoría y Control Interno</li>
+        </ul>
+      </div>
+      <div class="service-box">
+        <div class="service-title">Administración de Propiedad Horizontal</div>
+        <ul>
+          <li>Gestión Administrativa y Financiera</li>
+          <li>Cumplimiento Normativo</li>
+        </ul>
+      </div>
+      <div class="service-box">
+        <div class="service-title">Cobro de Cartera</div>
+        <ul>
+          <li>Estrategias de Recuperación</li>
+          <li>Análisis de Riesgo Crediticio</li>
+        </ul>
+      </div>
+      <div class="service-box">
+        <div class="service-title">Jurídico</div>
+        <ul>
+          <li>Asesoría Legal Integral</li>
+          <li>Representación y Defensa Jurídica</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<button onclick="window.location.href='index.html'" style="position: fixed; top: 5px; right: 70px; padding: 10px 20px; background-color: #18044e; color: white; border: none; border-radius: 5px; cursor: pointer;">Volver a Inicio</button>
+</html>
